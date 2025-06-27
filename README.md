@@ -16,20 +16,7 @@ AgentCode is an AI-driven platform for automated, multi-file codebase refactorin
 ---
 
 ## 🗂️ Project Structure
-AgentCode/
-├── backend/
-│   ├── agents/           # Planner and developer agents
-│   ├── codebase/         # Editable codebase (test.py, test2.py, etc.)
-│   ├── langgraph_app/    # Main workflow graph
-│   ├── models/           # LLM model wrappers
-│   ├── utils/            # File operations, AST, etc.
-│   └── main.py           # Backend entry point
-├── src/                  # React frontend
-│   ├── components/       # UI components
-│   ├── api.js            # API calls to backend
-│   └── App.jsx           # Main app
-├── public/               # Static assets
-└── README.md
+<pre lang="text"><code> ``` AgentCode/ ├── backend/ │ ├── agents/ # Planner and developer agents │ ├── codebase/ # Editable codebase (test.py, test2.py, etc.) │ ├── langgraph_app/ # Main workflow graph │ ├── models/ # LLM model wrappers │ ├── utils/ # File operations, AST, etc. │ └── main.py # Backend entry point ├── src/ # React frontend │ ├── components/ # UI components │ ├── api.js # API calls to backend │ └── App.jsx # Main app ├── public/ # Static assets └── README.md ``` </code></pre>
 
 
 ---
