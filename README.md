@@ -1,6 +1,6 @@
 # 🧠 AgentCode: LLM-Powered Codebase Refactoring Platform
 
-AgentCode is an AI-driven platform for automated, multi-file codebase refactoring and research, powered by state-of-the-art LLMs and a modular agent workflow.
+AgentCode is an AI-driven platform for automated, multi-file codebase refactoring and research
 
 ---
 
