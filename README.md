@@ -1,12 +1,89 @@
-# React + Vite
+# 🧠 AgentCode: LLM-Powered Codebase Refactoring Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AgentCode is an AI-driven platform for automated, multi-file codebase refactoring and research, powered by state-of-the-art LLMs and a modular agent workflow.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Step-by-step code planning and editing** using LLMs (OpenAI, Groq, Anthropic).
+- **Multi-file, multi-step refactoring** with atomic, explicit steps.
+- **Automatic codebase modification:** add, move, delete, and update code across files.
+- **Frontend code editor** with real-time output and theming.
+- **Extensible tool system:** add internal/external search, code mapping, and more.
+- **AST-based code understanding** for robust code edits.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🗂️ Project Structure
+AgentCode/
+├── backend/
+│ ├── agents/ # Planner and developer agents
+│ ├── codebase/ # Editable codebase (test.py, test2.py, etc.)
+│ ├── langgraph_app/ # Main workflow graph
+│ ├── models/ # LLM model wrappers
+│ ├── utils/ # File operations, AST, etc.
+│ └── main.py # Backend entry point
+├── src/ # React frontend
+│ ├── components/ # UI components
+│ ├── api.js # API calls to backend
+│ └── App.jsx # Main app
+├── public/ # Static assets
+└── README.md
+
+
+---
+
+## ⚡ Quickstart
+
+### **Backend**
+
+1. **Install dependencies:**
+   ```bash
+   cd backend
+   python -m venv venv
+   source venv/bin/activate  # or venv\Scripts\activate on Windows
+   pip install -r requirements.txt
+   ```
+
+2. **Set up environment variables:**
+   - Add your LLM API keys (e.g., `GROQ_API_KEY`, `OPENAI_API_KEY`, etc.) to a `.env` file.
+
+3. **Run the backend:**
+   ```bash
+   python main.py
+   ```
+
+### **Frontend**
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run the frontend:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open [http://localhost:5173](http://localhost:5173) in your browser.**
+
+---
+
+## 🛠️ How It Works
+
+- **Planner Agent:** Breaks down tasks into atomic, explicit steps (per file).
+- **Developer Agent:** Applies each step, modifying code using LLMs and AST context.
+- **Workflow:** Orchestrated by LangGraph, passing state between planner and developer.
+- **Frontend:** Lets you input tasks, view/edit code, and see results in real time.
+
+---
+
+## 🧩 Extending
+
+- **Add new tools:** (e.g., external search, code mapping) in `backend/agents/` and register in the workflow.
+- **Customize prompts:** in `backend/agents/planner.py` and `developer.py` for your use case.
+- **Plug in new LLMs:** via `backend/models/`.
+
+---
+
