@@ -1,0 +1,178 @@
+/* === index.css === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "xterm/css/xterm.css";
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.ide-header {
+  width: 100vw;
+  height: 36px;
+  background: #181c23;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #23272f;
+  padding-left: 24px;
+  z-index: 100;
+}
+.ide-header-logo {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.ide-header-angle {
+  color: #38bdf8;
+  font-size: 1.15rem;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  margin-left: 4px;
+}
+
+.ide-footer {
+  width: 100vw;
+  height: 28px;
+  background: #181c23;
+  color: #b3b3b3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  font-size: 0.95rem;
+  border-top: 1px solid #23272f;
+  padding-right: 24px;
+  z-index: 100;
+}
+.ide-footer-text {
+  font-size: 0.95rem;
+  color: #b3b3b3;
+}
+
+.ide-root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: #181c23;
+}
+
+.ide-horizontal-split {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+}
+
+.ide-sidebar-left, .ide-sidebar-right {
+  height: 100%;
+  min-width: 140px;
+  background: #23272f;
+  overflow: hidden;
+  transition: min-width 0.2s;
+}
+
+.ide-center {
+  height: 100%;
+  min-width: 280px;
+  position: relative;
+  flex: 1 1 0%;
+  background: #181c23;
+  display: flex;
+  flex-direction: column;
+}
+
+.ide-toggle-left, .ide-toggle-right {
+  position: absolute;
+  top: 8px;
+  z-index: 10;
+  background: #23272f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.ide-toggle-left:hover, .ide-toggle-right:hover {
+  opacity: 1;
+}
+.ide-toggle-left {
+  left: 0;
+  border-radius: 0 4px 4px 0;
+}
+.ide-toggle-right {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.ide-vertical-split {
+  height: 100% !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ide-editor-pane, .ide-output-pane {
+  height: 100%;
+  width: 100%;
+}
+
+/* Split.js gutter styling */
+.gutter {
+  background: #23272f;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.gutter:hover {
+  opacity: 1;
+}
+.gutter.gutter-horizontal {
+  cursor: col-resize;
+}
+.gutter.gutter-vertical {
+  cursor: row-resize;
+}
+
+/* Responsive: hide sidebars and show toggles on small screens */
+@media (max-width: 900px) {
+  .ide-sidebar-left, .ide-sidebar-right {
+    min-width: 0 !important;
+    width: 0 !important;
+    display: none !important;
+  }
+  .ide-toggle-left, .ide-toggle-right {
+    display: block !important;
+  }
+  .ide-center {
+    min-width: 0;
+  }
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
