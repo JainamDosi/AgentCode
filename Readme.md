@@ -1,6 +1,6 @@
 # 🧠 Agent Code — The Agentic Code Editor
 
-Agent Code is an AI-powered, agentic code editor that combines intelligent code suggestions, real-time execution, and chat-based development assistance in a sleek developer-friendly interface.
+Agent Code is an AI-powered, agentic code editor that combines intelligent agents, real-time execution, and chat-based development assistance in a sleek developer-friendly interface.
 
 ![Agent Code UI](https://drive.google.com/uc?id=15_ZN1XIgBgSIPAxN7Xik-5sbWpcmGm3F)
 
@@ -39,17 +39,8 @@ Agent Code is an AI-powered, agentic code editor that combines intelligent code 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React, Tailwind CSS, Monaco Editor  
-- **Backend**: FastAPI / Node.js (optional), Judge0 / Piston API  
-- **AI Layer**: OpenAI / Gemini / Local LLMs via LangChain Agents  
-- **Voice Agent (optional)**: Whisper STT + Google TTS  
-- **Infra**: Docker, Railway / Render (deploy-ready)
-
+- **Backend**: FastAPI , Piston API  
+- **AI Layer**: Gemini, Llama LLMs Agents via LangChain and LangGraph
 ---
 
-## 📦 Installation
 
-```bash
-git clone https://github.com/yourusername/agent-code.git
-cd agent-code
-npm install
-npm start
