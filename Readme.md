@@ -1,54 +1,48 @@
 # 🧠 Agent Code — The Agentic Code Editor
 
-Agent Code is an AI-powered, agentic code editor that blends traditional programming with intelligent chat-based assistance. It enables seamless natural language coding, real-time debugging help, and AI-generated code completions — all inside an intuitive interface.
+Agent Code is an AI-powered, agentic code editor that combines intelligent code suggestions, real-time execution, and chat-based development assistance in a sleek developer-friendly interface.
 
-![Agent Code Demo](./demo.gif)
+![Agent Code UI](https://drive.google.com/uc?id=15_ZN1XIgBgSIPAxN7Xik-5sbWpcmGm3F)
 
 ---
 
 ## 🚀 Features
 
-- 🔍 **Chat-First Coding Interface**  
-  Interact with a smart coding agent to generate, refactor, or explain code.
+- 💬 **Agentic Chat Interface**  
+  Chat with a smart agent to generate, refactor, debug, or explain code.
 
-- 🧠 **AI-Powered Autocomplete**  
-  Real-time AI suggestions that learn from your coding context.
+- ⚡ **AI-Powered Code Suggestions**  
+  Context-aware autocomplete and intelligent function generation.
 
-- 🧪 **Multi-Language Support**  
-  Supports Python, JavaScript, C++, and more via Piston or Judge0 API.
+- 🧪 **Multi-Language Execution**  
+  Supports Python, JavaScript, C++, and more using Piston or Judge0 APIs.
 
-- 📤 **Run Code Instantly**  
-  Execute code in real time with input/output support.
+- ▶️ **One-Click Run & Output**  
+  Instantly execute code and view outputs with stdin support.
 
-- 💬 **Explain & Debug with Agents**  
-  Ask "What does this function do?" or "Fix this bug" — and get actionable help.
+- 🧠 **Explain, Debug, and Improve Code via AI**  
+  Get insights and fixes just by asking questions in plain language.
 
-- 🎯 **Minimal, Modern UI**  
-  Built with React + Tailwind, inspired by a terminal-first developer experience.
+- 🖥️ **Modern Minimal UI**  
+  Built using React + Tailwind CSS with Monaco Editor for a clean terminal-like experience.
 
 ---
 
-
-
 ## 📹 Demo
 
-[![Watch Demo on Google Drive](https://drive.google.com/file/d/15_ZN1XIgBgSIPAxN7Xik-5sbWpcmGm3F/view?usp=sharing)](https://drive.google.com/drive/folders/1bqPaS2Cie13lI22dzSma5gW-o7jmXS8H?usp=sharing)
+[![Watch Demo Video](https://drive.google.com/uc?id=15_ZN1XIgBgSIPAxN7Xik-5sbWpcmGm3F)](https://drive.google.com/drive/folders/1bqPaS2Cie13lI22dzSma5gW-o7jmXS8H?usp=sharing)
 
 > _Click the image above to watch the full demo video on Google Drive._
-
-
-> _Or click here to [view the demo on Google Drive](https://drive.google.com/file/d/FILE_ID/view)_  
-> _(Make sure the video is publicly viewable)_
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React, Tailwind CSS, Monaco Editor  
-- **Backend**: Node.js / FastAPI (optional), Judge0 / Piston API  
+- **Backend**: FastAPI / Node.js (optional), Judge0 / Piston API  
 - **AI Layer**: OpenAI / Gemini / Local LLMs via LangChain Agents  
-- **Voice (optional)**: Whisper STT + Google TTS  
-- **Infra**: Docker, Railway/Render (for deployment)
+- **Voice Agent (optional)**: Whisper STT + Google TTS  
+- **Infra**: Docker, Railway / Render (deploy-ready)
 
 ---
 
