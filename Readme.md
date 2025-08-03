@@ -30,7 +30,12 @@ Agent Code is an AI-powered, agentic code editor that blends traditional program
 
 ## 📹 Demo
 
-[![Watch Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+## 📹 Demo
+
+[![Watch Demo on Google Drive](https://raw.githubusercontent.com/github/explore/main/topics/google-drive/google-drive.png)](https://drive.google.com/drive/folders/1bqPaS2Cie13lI22dzSma5gW-o7jmXS8H?usp=sharing)
+
+> _Click the image above to watch the full demo video on Google Drive._
+
 
 > _Or click here to [view the demo on Google Drive](https://drive.google.com/file/d/FILE_ID/view)_  
 > _(Make sure the video is publicly viewable)_
